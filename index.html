@@ -19,7 +19,7 @@
 <body class="bg-light">
 
   <!-- Modal content that is opened when button is clicked -->
-  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog">
     <!-- style as modal dialog box -->
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -43,7 +43,7 @@
     </div>
   </div>
 
-  <!-- Creating a container that has a margin of 4 and set background colour -->
+  <!-- Creating a container that has a top margin of 4 and set background colour -->
   <div class="container bg-light mt-4">
     <!-- Use the jumbotron layout  and set margins-->
     <div class="jumbotron border row ml-2 mr-2 pt-2 pb-2">
@@ -57,170 +57,453 @@
           <div class="lead pl-4">
             <p class="mb-0">Fourth Year Student studying Data Analytics in TUD Tallaght.
               I have attained a Level 7 Ordinary Degree in IT Management.
-              I am passionate about technology and strive to develop my IT career.
+              I am passionate about technology and strive to further my IT career.
             </p>
           </div>
         </div>
       </div>
       <hr class="my-4">
     </div>
-  
+
+
+    <!-- Create a new row-->
     <div class="row">
+      <!-- Create divide the page in to 12 columns and set the first column to 8 cols giving 66/33 divide on the page-->
       <div class="col-12 col-lg-8">
-        <!-- Creating the work exp card with a light background color -->
+        <!-- Style the div as a card and set the bottom margin-->
         <div class="card bg-light mb-4 ml-2 mr-2">
+          <!-- Add the card header and center text-->
           <h2 class="card-header text-center">Work Experience</h2>
-          <div class="card-body">
-            <div class="media mb-2"></div>
-            <div class="card-body">
-              <!-- Using the compamny logo and resizing it -->
+          <!-- Add a card body-->
+          <div class="card-body ml-4 mr-4">
+            <!-- Add a media object with bottom margin-->
+            <div class="media mb-2">
+              <!-- Add the logo and set the width-->
               <img width="60" src="./resources/CW.jpg">
+              <!-- Add the media body -->
               <div class="media-body">
-                <h3 class="h4 mb-1">Integration Engineer</h3>
+                <h4 class="ml-2 mb-2">Integration Engineer</h4>
+                <!-- Set the div as a flex element, center the content and align items to the base-->
                 <div class="d-sm-flex justify-content-sm-between align-items-sm-baseline">
-                  <!-- Providing a link to the Clanwilliam group-->
-                  <h5 class="mb-0"><a href="#0">Clanwilliam Group</a>
-                    <!-- stating the time I worked in CW and bolding the text -->
-                    <small class="d-block text-uppercase font-weight-bold text-muted"><time datetime="2020/01">January
-                        2020</time>&ndash;
-                      <time datetime="2020/01">April 2020</time></small>
-                  </h5>
+                  <!-- All the test and link-->
+                  <h5 class="ml-2"><a href="https://www.clanwilliamgroup.com/">Clanwilliam Group</a></h5>
+                  <!-- Use the small tag to display dates and set as a block as its normally inline, set to bold and light grey-->
+                  <small class="d-block text-uppercase font-weight-bold text-muted">
+                    <time datetime="2020/01"> Jan 2020</time>
+                    &ndash;
+                    <!-- Add a dash-->
+                    <time datetime="2020/04"> Apr 2020</time>
+                  </small>
                 </div>
-                <!-- Work exp details -->
-                <p class="card-text">I learned how to manipulate SQL Scripts, I tested the Claimsure User Interface and
-                  gave critical feedback on potential errors that could occur on their front-end.
-                  I interacted with clients from hospitals around Ireland daily dealing with queries to update/create
-                  hospital claim information. One of my most common tasks was using SQL scripts to create beds for
-                  hospitals around Ireland at the beginning of the Coronavirus Pandemic.
-                  I have liaised with multiple professionals daily in order tackle any bottlenecks in hospital tickets
-                  assigned to me and any issues I have resolving a query from hospital staff.
-                </p>
               </div>
             </div>
+            <p class="card-text">I learned how to write, modify and deploy SQL Scripts in a production environment. I
+              tested the Claimsure User Interface
+              and gave critical feedback on potential errors that could occur on their front-end.
+              I interacted with clients from hospitals around Ireland daily, dealing with queries to update or create
+              hospital claim information. One of my most common tasks was using SQL scripts to create beds for
+              hospitals around Ireland at the beginning of the Coronavirus Pandemic.
+              I have liaised with multiple professionals daily in order tackle any bottlenecks in hospital tickets
+              assigned to me and any issues I have resolving a query from hospital staff.
+            </p>
           </div>
-
         </div>
+
         <!-- Creating Education card -->
         <div class="card bg-light mb-4 ml-2 mr-2">
+          <!-- Add the card header and center text-->
           <h2 class="card-header text-center">Education</h2>
-          <div class="card-body">
-            <div class="media mb-2">
-              <div class="card-body">
-                <!-- using a graduate icon from fontawesome -->
-                <i class="fas fa-user-graduate fa-fv fa-3x text-primary mr-2"></i>
-                <div class="media-body">
-                  <h3 class="h4 mb-1">Ordinary Degree in IT Management</h3>
-                  <div class="d-sm-flex justify-content-sm-between align-items-sm-baseline">
-                    <!-- Providing a link to the TU Dublin -->
-                    <h5 class="mb-0"><a href="https://www.it-tallaght.ie/" target="_blank">TU Dublin Tallaght</a>
-                      <small class="d-block text-uppercase font-weight-bold text-muted"><time datetime="2016"></time>
-                        2016</time>&ndash;
-                        <time datetime="2020">2020</time></small>
-                    </h5>
-                  </div>
-
-                  <br>
-                  <!-- Providing a link to the Grifftih College website -->
-                  <h3 class="h4 mb-1">Higher Certificate in Computer Games Technologies</h3>
-                  <!-- Creating a div and centering the below text  -->
-                  <div class="d-sm-flex justify-content-sm-between align-items-sm-baseline"></div>
-                  <h5 class="mb-0"><a href="https://www.griffith.ie/" target="_blank">Griffith College</a>
-                    <small class="d-block text-uppercase font-weight-bold text-muted"><time datetime="2015"></time>
-                      2015</time>&ndash;
-                      <time datetime="2016">2016</time></small>
+          <!-- Add a card body-->
+          <div class="card-body ml-4 mr-4">
+            <!-- Add a media object with bottom margin-->
+            <div class="media mb-2 pb-4">
+              <!-- using a graduate icon from fontawesome -->
+              <i class="fas fa-user-graduate fa-fv fa-3x text-primary mr-2"></i>
+              <!-- Add the media body -->
+              <div class="media-body">
+                <h4 class="ml-2 mb-2">Ordinary Degree in IT Management</h4>
+                <!-- Set the div as a flex element, center the content and align items to the base-->
+                <div class="d-sm-flex justify-content-sm-between align-items-sm-baseline">
+                  <!-- All the test and link-->
+                  <h5 class="ml-2"><a href="https://www.it-tallaght.ie/">TU Dublin Tallaght</a></h5>
+                  <!-- Use the small tag to display dates and set as a block as its normally inline, set to bold and light grey-->
+                  <small class="d-block text-uppercase font-weight-bold text-muted">
+                    <time datetime="2020/01">2016</time>
+                    &ndash;
+                    <!-- Add a dash-->
+                    <time datetime="2020/04">2020</time>
+                  </small>
                 </div>
-                <p class="card-text"></p>
               </div>
+
+            </div>
+            <div class="media mb-2">
+              <!-- using a graduate icon from fontawesome -->
+              <i class="fas fa-user-graduate fa-fv fa-3x text-primary mr-2"></i>
+              <!-- Add the media body -->
+              <div class="media-body">
+                <h4 class="ml-2 mb-2">Higher Certificate in Computer Games Technologies</h4>
+                <!-- Set the div as a flex element, center the content and align items to the base-->
+                <div class="d-sm-flex justify-content-sm-between align-items-sm-baseline">
+                  <!-- All the test and link-->
+                  <h5 class="ml-2"><a href="https://www.griffith.ie/">Griffith College</a></h5>
+                  <!-- Use the small tag to display dates and set as a block as its normally inline, set to bold and light grey-->
+                  <small class="d-block text-uppercase font-weight-bold text-muted">
+                    <time datetime="2020/01">2015</time>
+                    &ndash;
+                    <!-- Add a dash-->
+                    <time datetime="2020/04">2016</time>
+                  </small>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
 
 
+
+        <!-- Style the div as a card and set the bottom margin-->
         <div class="card bg-light mb-4 ml-2 mr-2">
+          <!-- Add the card header and center text-->
           <h2 class="card-header text-center">Results</h2>
-          <div class="card-body">
+          <!-- Add a card body-->
+          <div class="card-body ml-4 mr-4 mb-4">
+            <!-- Add a media object with bottom margin-->
             <div class="media mb-2">
-              <div class="card-body">
-                <!-- Getting a university icon -->
-                <i class="fas fa-pencil-alt fa-fv fa-3x text-primary mr-2"></i>
-                <div class="media-body">
-                  <div class="d-sm-flex justify-content-sm-between align-items-sm-baseline">
-                    <!-- Providing a link to the TU Dublin -->
-                    <h5 class="h4 mb-1">Tu Dublin Tallaght
-                      <small class="d-block text-uppercase font-weight-bold text-muted"><time datetime="2016"></time>
-                        2016</time>&ndash;
-                        <time datetime="2020">2020</time></small>
-                    </h5>
-                  </div>
-                  <!-- Displaying my 1st-3rd year results in a paragraph -->
-                  <p class="card-text"> 3rd Year: Data Analytics (-B), Operating systems (C), Big Data
-                    Technologies(D), Server-Side Web Dev (C), Networking 3 (C), Cloud services & Distributed
-                    Computing (C).</p>
-                  <p class="card-text"> 2nd Year: Software Quality Assurance (C), Database Programming (D), Discrete
-                    Maths 2(-B), Web Design (C), Scripting (C+), Management Science (B), Networking 1 (C),
-                    Networking 2 (D), Information Security (D), IT Service Management (C+), 2nd year project (B),
-                    Database Administration (C).</p>
-                  <p class="card-text"> 1st Year: S Database Fundamentals (B), S Software Development 2 (D), S
-                    Object Oriented System Analysis(C), S Social Media Communications(B-), S Statistics(D), S
-                    Operating System Fundamentals(C), W Software Development 1(C), W Computer Architecture(C), W
-                    Fundament of Interface & Web(C+), W Business & Information Sys(C+), W Discrete Mathematics 1(C),
-                    Learning to Learn(B).</p>
+              <!-- Add the icon from font awesome, increase the size, add margins and set the colour-->
+              <i class="fas fa-pencil-alt fa-fv fa-3x text-primary mr-2"></i>
+              <!-- Add the media body -->
+              <div class="media-body">
+                <h4 class="ml-2 mb-2">Tu Dublin Tallaght</h4>
+                <!-- Set the div as a flex element, center the content and align items to the base-->
+                <div class="d-sm-flex justify-content-sm-between align-items-sm-baseline">
+
                 </div>
               </div>
             </div>
+
+            <!-- Add text header and button for collapsable section-->
+            <div class="d-flex">
+              <h3 class="p-2 w-100 ">3rd Year</h3>
+              <!-- Add a button to expand and collapse the results table-->
+              <button class="btn text-black p-2 flex-shrink-1" type="button" data-toggle="collapse"
+                data-target="#resultsTable1">Show</button>
+
+            </div>
+            <!-- Add a table for results-->
+            <table class="table table-striped" data-toggle="collapse">
+              <!-- Add table heading-->
+              <thead>
+                <!-- Add row-->
+                <tr>
+                  <!-- Add cell headings-->
+                  <th scope="col">#</th>
+                  <th scope="col">Subject</th>
+                  <th scope="col">Grade</th>
+                </tr>
+              </thead>
+              <!-- Add table body-->
+              <tbody class="collapse" id="resultsTable1">
+                <!-- Add the data for each of the rows in the table-->
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Data Analytics</td>
+                  <td>B-</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Operating Systems</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Big Data Technologies</td>
+                  <td>D</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Server-Side Web Dev</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Networking</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Cloud services & Distributed
+                    Computing</td>
+                  <td>C</td>
+                </tr>
+              </tbody>
+            </table>
+
+
+
+            <div class="d-flex">
+              <h3 class="p-2 w-100 ">2nd Year</h3>
+              <!-- Add a button to expand and collapse the results table-->
+              <button class="btn text-black p-2 flex-shrink-1" type="button" data-toggle="collapse"
+                data-target="#resultsTable2">Show</button>
+            </div>
+
+           
+            <!-- Add a table for results-->
+            <table class="table table-striped">
+              <!-- Add table heading-->
+              <thead>
+                <!-- Add row-->
+                <tr>
+                  <!-- Add cell headings-->
+                  <th scope="col">#</th>
+                  <th scope="col">Subject</th>
+                  <th scope="col">Grade</th>
+                </tr>
+              </thead>
+              <!-- Add table body-->
+              <tbody class="collapse" id="resultsTable2">
+                <!-- Add the data for each of the rows in the table-->
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Software Quality Assurance</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Database Programming</td>
+                  <td>D</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Discrete Maths</td>
+                  <td>B-</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Web Design</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Scripting</td>
+                  <td>C+</td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Management Science</td>
+                  <td>B</td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>Networking 1</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>Networking 2</td>
+                  <td>B</td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td>Information Security</td>
+                  <td>D</td>
+                </tr>
+                <tr>
+                  <th scope="row">10</th>
+                  <td>IT Service Management</td>
+                  <td>C+</td>
+                </tr>
+                <tr>
+                  <th scope="row">11</th>
+                  <td>2nd year project</td>
+                  <td>B</td>
+                </tr>
+                <tr>
+                  <th scope="row">12</th>
+                  <td>Database Administration</td>
+                  <td>C</td>
+                </tr>
+              </tbody>
+            </table>
+
+
+
+            <!-- Use flex to how header and right align button-->
+            <div class="d-flex">
+              <h3 class="p-2 w-100 ">1st Year</h3>
+              <!-- Add a button to expand and collapse the results table-->
+              <button class="btn text-black p-2 flex-shrink-1" type="button" data-toggle="collapse"
+                data-target="#resultsTable3">Show</button>
+
+            </div>
+
+            <!-- Add a table for results-->
+            <table class="table table-striped">
+              <!-- Add table heading-->
+              <thead>
+                <!-- Add row-->
+                <tr>
+                  <!-- Add cell headings-->
+                  <th scope="col">#</th>
+                  <th scope="col">Subject</th>
+                  <th scope="col">Grade</th>
+                </tr>
+              </thead>
+              <!-- Add table body-->
+              <tbody class="collapse" id="resultsTable3">
+                <!-- Add the data for each of the rows in the table-->
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Database Fundamentals</td>
+                  <td>B</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Software Development</td>
+                  <td>D</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Object Oriented System Analysis</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Social Media Communications</td>
+                  <td>B-</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Statistics</td>
+                  <td>D</td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Operating System Fundamentals</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>Software Development</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>Computer Architecture</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td>Fundament of Interface & Web</td>
+                  <td>C+</td>
+                </tr>
+                <tr>
+                  <th scope="row">10</th>
+                  <td>Business & Information Sys</td>
+                  <td>C+</td>
+                </tr>
+                <tr>
+                  <th scope="row">11</th>
+                  <td>Discrete Mathematics</td>
+                  <td>C</td>
+                </tr>
+                <tr>
+                  <th scope="row">12</th>
+                  <td>Learning to Learn</td>
+                  <td>B</td>
+                </tr>
+              </tbody>
+            </table>
+
           </div>
         </div>
 
-        <!-- Creating the projects card -->
+
+
+        <!-- Style the div as a card and set the bottom margin-->
         <div class="card bg-light mb-4 ml-2 mr-2">
+          <!-- Add the card header and center text-->
           <h2 class="card-header text-center">Projects</h2>
-          <div class="card-body">
+          <!-- Add a card body-->
+          <div class="card-body ml-4 mr-4 mb-4">
+            <!-- Add a media object with bottom margin-->
             <div class="media mb-2">
-              <div class="card-body">
-                <!-- Getting a laptop icon -->
-                <i class="fas fa-laptop fa-fv fa-3x text-primary mr-2"></i>
-                <div class="media-body">
-                  <h3 class="h4 mb-1"></h3>
-                  <div class="d-sm-flex justify-content-sm-between align-items-sm-baseline">
-                  </div>
-                  <p class="card-text">4th year Project: Building a system that aids a business employee to ask for
-                    ID. A Convolutional Neural Network Model that will be trained to recognize a Minor or Adult with
-                    a 95% confidence interval.</p>
-                  <p class="card-text">2nd Year Project: Worked in a team to build a web application that produced
-                    some static html and to connect to a Database using the Django Python Framework. I contributed
-                    on the command line in Linux to initially build the web application and connect to the database
-                    and I used bootstrap code.</p>
+              <!-- Add the icon from font awesome, increase the size, add margins and set the colour-->
+              <i class="fas fa-laptop fa-fv fa-3x text-primary mr-2"></i>
+              <!-- Add the media body -->
+              <div class="media-body">
+                <h4 class="ml-2 mb-2">4th year Project</h4>
+                <!-- Set the div as a flex element, center the content and align items to the base-->
+                <div class="d-sm-flex justify-content-sm-between align-items-sm-baseline">
+
                 </div>
               </div>
             </div>
+
+            <p class="card-text"> Building a system that aids a business employee to ask for
+              ID. A Convolutional Neural Network Model that will be trained to recognize a Minor or Adult with
+              a 95% confidence interval.
+            </p>
+
+
+
+            <!-- Add a media object with bottom margin-->
+            <div class="media mb-2">
+              <!-- Add the icon from font awesome, increase the size, add margins and set the colour-->
+              <i class="fas fa-laptop fa-fv fa-3x text-primary mr-2"></i>
+              <!-- Add the media body -->
+              <div class="media-body">
+                <h4 class="ml-2 mb-2">2nd Year Project</h4>
+                <!-- Set the div as a flex element, center the content and align items to the base-->
+                <div class="d-sm-flex justify-content-sm-between align-items-sm-baseline">
+                </div>
+              </div>
+            </div>
+            <p class="card-text">Worked in a team to build a web application that produced
+              some static html and to connect to a Database using the Django Python Framework. I contributed
+              on the command line in Linux to initially build the web application and connect to the database
+              and I used bootstrap code.
+            </p>
           </div>
         </div>
 
+
+
+
+        <!-- Style the div as a card and set the bottom margin-->
         <div class="card bg-light mb-4 ml-2 mr-2">
+          <!-- Add the card header and center text-->
           <h2 class="card-header text-center">Interests and Hobbies</h2>
-          <div class="card-body">
+          <!-- Add a card body-->
+          <div class="card-body ml-4 mr-4 mb-4">
+            <!-- Add a media object with bottom margin-->
             <div class="media mb-2">
-              <div class="card-body">
-                <!-- Displaying a university icon -->
-                <i class="fab fa-spotify fa-fv fa-3x text-primary mr-2"></i>
-                <div class="media-body">
-                  <h3 class="h4 mb-1"></h3>
-                  <div class="d-sm-flex justify-content-sm-between align-items-sm-baseline">
-                  </div>
-                  <p class="card-text">I have a keen interest in Artificial Intelligence and Data Analytics. I have
-                    used Python and C# as part of my course in learning Data Analytics/Machine Learning and building
-                    web applications.
-                    My favourite language to work in is Python. I enjoy to code and I am striving to continue
-                    building on my knowledge of code.
-                    I enjoy playing Pool and Snooker when I get time and I love to socialise with friends. I enjoy
-                    walks and listening to Spotify to zone out. I have managed multiple events for club members
-                    catering up to 15 people.
-                  </p>
+              <!-- Add the icon from font awesome, increase the size, add margins and set the colour-->
+              <i class="fas fa-user fa-fv fa-3x text-primary mr-2"></i>
+              <!-- Add the media body -->
+              <div class="media-body">
+                <h4 class="ml-2 mb-2">About Me</h4>
+                <!-- Set the div as a flex element, center the content and align items to the base-->
+                <div class="d-sm-flex justify-content-sm-between align-items-sm-baseline">
                 </div>
               </div>
             </div>
+            <p class="card-text">I have a keen interest in Artificial Intelligence and Data Analytics. I have
+              used Python and C# as part of my course in learning Data Analytics/Machine Learning and building
+              web applications.
+              My favourite language to work in is Python. I enjoy conding and I am striving to build my coding
+              knowledge.
+              I enjoy playing Pool and Snooker when I get time and I love to socialise with friends. I enjoy
+              walks and listening to Spotify to zone out.
+            </p>
           </div>
         </div>
+
+
+
+
       </div>
       <!-- Define the div to hold the contact details-->
       <div class="col-12 col-lg-4">
@@ -311,8 +594,8 @@
               </div>
               <!-- Apply media body style-->
               <div class="media-body">
-                <a href="https://github.com/Sean-Maxwell" target="_blank">/Sean-Maxwell</a>
-                <a href="https://github.com/X00136016" target="_blank">/X00136016</a>
+                <div><a href="https://github.com/Sean-Maxwell" target="_blank">/Sean-Maxwell</a></div>
+                <div><a href="https://github.com/X00136016" target="_blank">/X00136016</a></div>
                 <!-- Draw line-->
                 <hr>
               </div>
@@ -329,8 +612,7 @@
                 HTML5
               </h4>
               <div class="progress mb-3">
-                <div class="progress-bar bg-secondary w-75" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                  aria-valuemax="100"></div>
+                <div class="progress-bar bg-secondary w-75" role="progressbar"></div>
               </div>
             </div>
             <h4 class="h6 text-muted">
@@ -338,40 +620,35 @@
               Python
             </h4>
             <div class="progress mb-3">
-              <div class="progress-bar bg-secondary w-75" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                aria-valuemax="100"></div>
+              <div class="progress-bar bg-secondary w-75" role="progressbar"></div>
             </div>
             <h4 class="h6 text-muted">
               <i class="fas fa-fw fa-cloud text-primary"></i>
               Google Cloud
             </h4>
             <div class="progress mb-3">
-              <div class="progress-bar bg-secondary w-50" role="progressbar" aria-valuenow="100" aria-valuemin="0"
-                aria-valuemax="100"></div>
+              <div class="progress-bar bg-secondary w-50" role="progressbar"></div>
             </div>
             <h4 class="h6 text-muted">
               <i class="fas fa-fw fa-database text-primary"></i>
               SQL
             </h4>
             <div class="progress mb-3">
-              <div class="progress-bar bg-secondary w-75" role="progressbar" aria-valuenow="100" aria-valuemin="0"
-                aria-valuemax="100"></div>
+              <div class="progress-bar bg-secondary w-75" role="progressbar"></div>
             </div>
             <h4 class="h6 text-muted">
               <i class="fab fa-fw fa-css3 text-primary"></i>
               CSS3
             </h4>
             <div class="progress mb-3">
-              <div class="progress-bar bg-secondary w-50" role="progressbar" aria-valuenow="100" aria-valuemin="0"
-                aria-valuemax="100"></div>
+              <div class="progress-bar bg-secondary w-50" role="progressbar"></div>
             </div>
             <h4 class="h6 text-muted">
               <i class="fab fa-fw fa-linux text-primary"></i>
               Linux
             </h4>
             <div class="progress mb-3">
-              <div class="progress-bar bg-secondary w-75" role="progressbar" aria-valuenow="100" aria-valuemin="0"
-                aria-valuemax="100"></div>
+              <div class="progress-bar bg-secondary w-75" role="progressbar"></div>
             </div>
           </div>
 
